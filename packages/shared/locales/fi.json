@@ -415,9 +415,9 @@
                 "title": "Siirrä Ledger-indeksi",
                 "description": "Siirrä toinen Trinity-tilin indeksi"
             },
-            "stateExport": {
-                "title": "Tilan vienti",
-                "description": "Vie transaktiohistoriasi .csv-tiedostoon"
+            "transactionHistory": {
+                "title": "Transaction history",
+                "description": "Export the transaction history of your accounts as .csv files"
             },
             "troubleshoot": {
                 "title": "Vianmääritys",
@@ -669,6 +669,13 @@
         "ledgerMigrateIndex": {
             "title": "Täytyykö sinun siirtää toinen Trinity-tilin indeksi?",
             "body": "Voit myös tehdä migraation myöhemmin lisäasetuksissa."
+        },
+        "exportTransactionHistory": {
+            "title": "Export transaction history",
+            "body": "Export your transaction history for all accounts consecutively within this profile. Exports will be in a CSV format.",
+            "profileName": "Profile name:",
+            "numberOfAccounts": "Number of accounts:",
+            "typePassword": "Type your password to allow exporting"
         }
     },
     "charts": {
@@ -724,11 +731,12 @@
         "dropHere": "Pudota tiedosto tähän",
         "syncAll": "Synkronoi kaikki",
         "export": "Vie",
+        "exporting": "Exporting",
         "exportNewStronghold": "Vie uuteen Strongholdiin",
         "enableDeepLinks": "Ota IOTA-linkit käyttöön",
         "enableDeveloperMode": "Ota kehittäjätila käyttöön",
         "enableSystemNotifications": "Ota järjestelmäilmoitukset käyttöön",
-        "exportState": "Vie tila",
+        "exportTransactionHistory": "Export transaction history",
         "localProofOfWork": "Paikallinen todiste työstä (PoW)",
         "unlock": "Avaa",
         "updateFirefly": "Päivitä Firefly",
@@ -927,6 +935,10 @@
         "copiedToClipboard": "Kopioitu leikepöydälle",
         "accountsSynchronized": "Lompakon synkronointi valmis",
         "fundsAvailableSoon": "Varasi ovat käytettävissä pian",
+        "exportTransactionHistory": {
+            "success": "Transaction history for {accountAlias} was successfully saved to {filePath}",
+            "error": "Unable to export transaction history for {accountAlias}"
+        },
         "deepLinkingRequest": {
             "recievedWhileLoggedOut": "Ole hyvä ja kirjaudu aloittaaksesi IOTA-linkin",
             "notEnabled": "IOTA-linkit eivät ole käytössä",
